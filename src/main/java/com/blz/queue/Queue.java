@@ -1,6 +1,7 @@
 package com.blz.queue;
 
 import com.blz.queue.MyLinkedList;
+import com.blz.queue.INode;
 
 public class Queue<K> extends MyLinkedList<K>{
 
@@ -18,4 +19,7 @@ public class Queue<K> extends MyLinkedList<K>{
 		return myLinkedList.head;
 	}
 	
+	public INode deque() {
+		return myLinkedList.pop();
+	}
 }
